@@ -12,14 +12,6 @@ var computer = {
 }
 var turnCounter = 0;
 
-function gameOn(){
-  setPlayerXorO();
-  while(gameHasWinner === false){
-    playerTurn();
-    computerTurn();
-  }
-}
-
 function setPlayerXorO(){
   player.symbol = prompt("Would you like to be an X or and O");
   if(player.symbol === "X"){
@@ -93,3 +85,5 @@ function resetGame(){
     window.location.reload();
   }
 }
+
+setPlayerXorO();
