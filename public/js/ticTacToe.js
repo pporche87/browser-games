@@ -1,5 +1,9 @@
 var gameBoard = document.getElementById("gameBoard");
-var gameboardArray = ["#","#","#","#","#","#","#","#","#"];
+var gameboardArray = [
+  "#","#","#",
+  "#","#","#",
+  "#","#","#"
+];
 var winConditionData = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
 var gameHasWinner = false;
 var resetGame = false;
@@ -42,19 +46,9 @@ var square6 = document.getElementById("6");
 var square7 = document.getElementById("7");
 var square8 = document.getElementById("8");
 
-function playerTurn(square0, square1, square3, square4, square5, square6, square7, square8){
-  var square0 = document.getElementById("0");
-  var square1 = document.getElementById("1");
-  var square2 = document.getElementById("2");
-  var square3 = document.getElementById("3");
-  var square4 = document.getElementById("4");
-  var square5 = document.getElementById("5");
-  var square6 = document.getElementById("6");
-  var square7 = document.getElementById("7");
-  var square8 = document.getElementById("8");
+function playerTurn(){
   if(gameboardArray[0] === "#"){
     square0.className += player.class;
-
   }
 }
 
@@ -95,10 +89,12 @@ function checkWinner(winConditionData){
 
 function checkWinnerHelper(index1, index2, index3){
     if(gameboardArray[index1] === "X" && gameboardArray[index2] === "X" && gameboardArray[index3] === "X"){
+      // check if these three are equal to eachother and not empty
       prompt("X's Win!");
       gameHasWinner = true;
       resetGame = true;
     } else if(gameboardArray[index1] === "O" && gameboardArray[index2] === "O" && gameboardArray[index3] === "O") {
+      // check if these three are equal to eachother and not empty 
       prompt("O's win!");
       gameHasWinner = true;
       resetGame = true;
