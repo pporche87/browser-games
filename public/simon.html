@@ -3,8 +3,66 @@
   <head>
     <meta charset="utf-8">
     <title>Simon</title>
+    <link rel="stylesheet" href="/css/simon.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.js"
+      integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+      crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>Simon</h1>
+    <h1 class="header">Simon</h1>
+    <div class="level score header">
+      <h2>Level: 1</h2>
+    </div>
+    <div class="score">
+      <h2>Score: 0</h2>
+    </div>
+    <ul class="difficulty">
+      <li>
+        <input class="diffOpt" type="radio" name="difficulty" value="2">Easy
+      </li>
+      <li>
+        <input class="diffOpt" type="radio" name="difficulty" value="1">Normal
+      </li>
+      <li>
+        <input class="diffOpt" type="radio" name="difficulty" value="0.5">Hard
+      </li>
+      <li>
+        <input class="diffOpt" type="radio" name="difficulty" value="0.25">Insane
+      </li>
+    </ul>
+    <div class="startButton">
+      <button class="start">Start</button>
+    </div>
+    <div class="wrapper">
+      <div class="back">
+        <div class="pad shape1">
+          <audio class="sound1" preload="auto" data-pad="1">
+            <source src="sounds/mp3/sounds_01.mp3" type="audio/mpeg">
+            <source src="sounds/ogg/sounds_01.ogg" type="audio/ogg">
+          </audio>
+        </div>
+        <div class="pad shape2">
+          <audio class="sound2" preload="auto" data-pad="2">
+            <source src="sounds/mp3/sounds_02.mp3" type="audio/mpeg">
+            <source src="sounds/ogg/sounds_02.ogg" type="audio/ogg">
+          </audio>
+        </div>
+        <div class="pad shape3">
+          <audio class="sound3" preload="auto" data-pad="3">
+            <source src="sounds/mp3/sounds_03.mp3" type="audio/mpeg">
+            <source src="sounds/ogg/sounds_03.ogg" type="audio/ogg">
+          </audio>
+        </div>
+        <div class="pad shape4">
+          <audio class="sound4" preload="auto" data-pad="4">
+            <source src="sounds/mp3/sounds_04.mp3" type="audio/mpeg">
+            <source src="sounds/ogg/sounds_04.ogg" type="audio/ogg">
+          </audio>
+        </div>
+        <div class="center">
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="/js/simon.js"></script>
   </body>
 </html>

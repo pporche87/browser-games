@@ -89,10 +89,12 @@ function checkWinner(winConditionData){
 
 function checkWinnerHelper(index1, index2, index3){
     if(gameboardArray[index1] === "X" && gameboardArray[index2] === "X" && gameboardArray[index3] === "X"){
+      // check if these three are equal to eachother and not empty
       prompt("X's Win!");
       gameHasWinner = true;
       resetGame = true;
     } else if(gameboardArray[index1] === "O" && gameboardArray[index2] === "O" && gameboardArray[index3] === "O") {
+      // check if these three are equal to eachother and not empty 
       prompt("O's win!");
       gameHasWinner = true;
       resetGame = true;
