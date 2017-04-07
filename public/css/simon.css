@@ -34,11 +34,21 @@
   background-color: green;
 }
 
+.shape1:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
 .shape2 {
   float: left;
   border-top-right-radius: 300px;
   background-color: red;
   clear: right;
+}
+
+.shape2:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 
 .shape3 {
@@ -48,13 +58,23 @@
   clear: left;
 }
 
+.shape3:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
 .shape4 {
   float: left;
   border-bottom-right-radius: 300px;
   background-color: blue;
 }
 
-.center {
+.shape4:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.circle {
   position: absolute;
   top: 195px;
   left: 195px;

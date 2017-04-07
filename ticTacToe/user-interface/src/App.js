@@ -42,6 +42,7 @@ class App extends Component {
   }
   winner(board, player){
     if(
+      // figure out how to do the winner function with a loop
       (board[0] === player && board[1] === player && board[2] === player) ||
       (board[3] === player && board[4] === player && board[5] === player) ||
       (board[6] === player && board[7] === player && board[8] === player) ||
@@ -86,6 +87,7 @@ class App extends Component {
     }
     return move;
   }
+  // minMaxScore function ? argument for passing in which player is playing
   minScore(board){
     if(this.winner(board, "x")){
       return 10;
@@ -143,6 +145,7 @@ class App extends Component {
       });
       return;
     }
+    // roll into one function and call that function
     player = "o";
     currentGameBoard = this.validMove(this.findAiMove(currentGameBoard), player, currentGameBoard);
     if(this.winner(currentGameBoard, player)){
