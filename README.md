@@ -2,7 +2,19 @@
 
 A collection of games to play in a web browser. See the full list of games in the [games.md](games.md) file.
 
-## Installation and Setup
+## Installation and Setup Tic Tac Toe
+
+cd into path ticTacToe/user-interface.
+
+```
+$npm start
+```
+Available on:
+  http://localhost:3000/
+
+Continue to next step...
+
+## Installation and Setup Simon
 
 Clone the repo, install npm dependencies, and start the server:
 
